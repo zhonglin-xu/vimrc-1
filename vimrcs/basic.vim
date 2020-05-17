@@ -164,7 +164,7 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git etc. anyway...
+" Turn backup off, since most stuff is in SVN, git etc. 
 set nobackup
 set nowb
 set noswapfile
