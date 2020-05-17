@@ -37,6 +37,10 @@ set history=500
 filetype plugin on
 filetype indent on
 
+" Display line number
+set number
+set relativenumber
+
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
