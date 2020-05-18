@@ -149,6 +149,7 @@ catch
 endtry
 
 set background=dark
+set gfn=Lucida_Console:h11
 
 " Set extra options when running in GUI mode
 if has("gui_running")
