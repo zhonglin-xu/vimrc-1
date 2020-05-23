@@ -182,9 +182,9 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " => Fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <silent> <leader>gs :Gstatus<cr>
-noremap <silent> <leader>gd :Gdiff<cr>
+noremap <silent> <leader>gd :Gvdiffsplit<cr>
 noremap <silent> <leader>gc :Gcommit<cr>
 noremap <silent> <leader>gb :Gblame<cr>
-nnoremap <silent> <leader>gl :Glog<cr>
+noremap <silent> <leader>gl :Glog<cr>
 noremap <silent> <leader>gp :Git push<cr>
 noremap <silent> <leader>gw :Gwrite<cr>
