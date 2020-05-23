@@ -319,6 +319,12 @@ map <leader>s? z=
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Quick Run
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>. :call CompileRunGcc()<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
@@ -385,4 +391,15 @@ function! VisualSelection(direction, extra_filter) range
 
     let @/ = l:pattern
     let @" = l:saved_reg
+endfunction
+
+func! CompileRunGcc()
+    exec "w"
+    if &filetype == 'python'
+        exec "!python3 %"
+    elseif &filetype == 'sh'
+        exec "!bash %"
+    elseif &filetype == 'go'
+        exec "!go run %"
+    endif
 endfunction
